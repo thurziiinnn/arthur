@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia New CPII</title>
+</head>
+<body>
+    <h1>Faça Um Cadastro</h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <label for="fname">Informe Seu Nome:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="date">Informe sua idade:</label><br>
+            <input type="number" id="idade" name="idade" value=""><br>
+            <label for="peso">Informe seu Peso:</label><br>
+            <input type="number" id="peso" name="peso" value=""><br>
+            <label for="altura">Informe sua altura:</label><br>
+            <input type="number" id="altura" name="altura" value=""><br>
+            <br>
+            <button type="button" onclick="irParaOutraPagina()"> Enviar</button>
+        </fieldset>
+    </form>
+
+    <script>
+        function irParaOutraPagina() {
+            window.location.href = "file:///C:/Users/labcaxias/Documents/DS102/Untitled-1.html"; // Substitua pelo URL da página desejada
+        }
+    </script>
+</body>
+</html>

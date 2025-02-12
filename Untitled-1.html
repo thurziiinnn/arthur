@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escolha o que deseja praticar</title>
+</head>
+<body>
+  <h1>Escolha o que deseja praticar</h1>
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Informações</legend>
+      <label for="esporte">Selecione um esporte:</label>
+      <select id="esporte" name="esporte" required>
+        <option value="">Escolha uma opção</option>
+        <option value="judô" selected>Judô</option>
+        <option value="box">Box</option>
+        <option value="capoeira">Capoeira</option>
+      </select><br><br>
+      <button type="button" onclick="irParaOutraPagina()">Enviar</button>
+    </fieldset>
+  </form>
+
+  <script>
+    function irParaOutraPagina() {
+      window.location.href = "file:///C:/Users/labcaxias/Documents/DS102/horario%20de%20treino.html"; // Substitua pelo URL da página desejada
+    }
+  </script>
+</body>
+</html>
