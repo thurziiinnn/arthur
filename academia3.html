@@ -5,44 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia New CPII</title>
     <style>
-        h1{
-            text-align: center;
-            font-size: 200%;
+        /* Centralizar o conteúdo da página */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-        fieldset{
+
+        /* Centralizar o cabeçalho */
+        h1 {
             text-align: center;
-            width: 30%;
-            height: 200px;
-            margin: auto;
+        }
+
+        /* Centralizar o formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
             padding: 20px;
+            border: 1px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-color: #f9f9f9;
+            margin-top: 20px;
         }
 
+        /* Centralizar os itens do fieldset */
+        #122 {
+            text-align: center;
+            font-size: 100%;
+        }
     </style>
 </head>
 <body>
     <h1>Faça Um Cadastro</h1>
     <form action="/action_page.php">
-        <fieldset>
+        <fieldset id="122">
             <label for="fname">Informe Seu Nome:</label><br>
             <input type="text" id="fname" name="fname" value=""><br>
-            <label for="date">Informe sua idade:</label><br>
+            <label for="idade">Informe sua idade:</label><br>
             <input type="number" id="idade" name="idade" value=""><br>
             <label for="peso">Informe seu Peso:</label><br>
             <input type="number" id="peso" name="peso" value=""><br>
             <label for="altura">Informe sua altura:</label><br>
             <input type="number" id="altura" name="altura" value=""><br>
             <br>
-            <button type="button" onclick="irParaOutraPagina()"> Enviar</button>
+            <button type="button" onclick="irParaOutraPagina()">Enviar</button>
         </fieldset>
     </form>
 
     <script>
-        function irParaOutraPagina() {
-            window.location.href = "file:///C:/Users/labcaxias/Documents/DS102/Untitled-1.html"; // Substitua pelo URL da página desejada
-        }
-    </script>
-</body>
-</html>
+        function irPara
