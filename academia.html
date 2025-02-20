@@ -27,21 +27,35 @@
     <form action="/action_page.php">
         <fieldset>
             <label for="fname">Informe Seu Nome:</label><br>
-            <input type="text" id="fname" name="fname" value=""><br>
-            <label for="date">Informe sua idade:</label><br>
-            <input type="number" id="idade" name="idade" value=""><br>
+            <input type="text" id="nome" name="fname" value=""><br>
+            <label for="idade">Informe sua idade:</label><br>
+            <input type="number" id="idade" name="idade" value="" min="0"><br> 
             <label for="peso">Informe seu Peso:</label><br>
-            <input type="number" id="peso" name="peso" value=""><br>
+            <input type="number" id="peso" name="peso" value="" min="0"><br> 
             <label for="altura">Informe sua altura:</label><br>
-            <input type="number" id="altura" name="altura" value=""><br>
+            <input type="number" id="altura" name="altura" value="" min="0"><br> 
             <br>
-            <button type="button" onclick="irParaOutraPagina()"> Enviar</button>
+            <button type="button" onclick="irParaOutraPagina()">Enviar</button>
         </fieldset>
     </form>
 
     <script>
+        document.getElementById("cadastroFrom").addEventListener("submit", fuction(verificação){
+            verificação.preventDefault();
+            let verificar1 = document.getElementById("nome").value.trim();
+            let verificar1 = document.getElementById("idade").value.trim();
+            let verificar1 = document.getElementById("peso").value.trim();
+            let verificar1 = document.getElementById("altura").value.trim();
+
+            if (verificar1 == "" || verificar2 == "" || verificar3 == ""){
+                alert (Preencha todas as arestas!);
+                return;
+            }
+                alert("Cadastro Realizado Com Sucesso")
+                {);
+                    
         function irParaOutraPagina() {
-            window.location.href = "file:///C:/Users/labcaxias/Documents/DS102/Untitled-1.html"; // Substitua pelo URL da página desejada
+            window.location.href = "file:///C:/Users/labcaxias/Documents/DS102/nego%20pl/horario2.html";
         }
     </script>
 </body>
