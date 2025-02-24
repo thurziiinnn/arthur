@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia New CPII</title>
     <style>
-        h1{
+        h1 {
             text-align: center;
             font-size: 200%;
         }
-        fieldset{
+        fieldset {
             text-align: center;
             width: 30%;
             height: 250px;
@@ -19,12 +19,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-color: #f9f9f9;
         }
-
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            fieldset {
+                width: 80%;
+            }
+        }
     </style>
 </head>
-<body style="background-image: url("https://images.app.goo.gl/EvhiQNu3ggg2TH7J8");">
+<body>
     <div class="image-container">
-        <img src="https://images.app.goo.gl/EvhiQNu3ggg2TH7J8" alt="CPII" width="200">
+        <img src="URL_DA_IMAGEM_DO_PASSARO" alt="Pássaro" width="200">
     </div>
     <h1>Faça Um Cadastro</h1>
     <form id="cadastroForm" action="/action_page.php">
@@ -38,23 +46,3 @@
             <label for="altura">Informe sua altura:</label><br>
             <input type="number" id="altura" name="altura" value="" min="0"><br> 
             <br>
-            <button type="submit">Enviar</button>
-        </fieldset>
-    </form>
-
-    <script>
-            let nome = document.getElementById("nome").value.trim();
-            let idade = document.getElementById("idade").value.trim();
-            let peso = document.getElementById("peso").value.trim();
-            let altura = document.getElementById("altura").value.trim();
-
-            if (nome == "" || idade == "" || peso == "" || altura == "") {
-                alert("Preencha todas as áreas!");
-                return;
-            }
-
-        
-            window.location.href = "file:///C:/Users/labcaxias/Documents/DS102/nego%20pl/horario2.html";
-    </script>
-</body>
-</html>

@@ -9,7 +9,6 @@ def adicionar_cadastro(nome, idade, peso, altura):
         'peso': peso,
         'altura': altura
     }
-    print()
     cadastros.append(cadastro)
     print("Cadastro realizado com sucesso!")
 
